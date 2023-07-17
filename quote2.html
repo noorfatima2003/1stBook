@@ -10,50 +10,163 @@
     <link rel="icon" href="Free_Sample_By_Wix (1).jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+body{
+  background: #42455a;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+</style>
+
+
+<script>
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+</script>
 <body style="background-color: #fffdfd;" >
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div>
-          <a class="navbar-brand" href="indexb (1).html"><img src="Free_Sample_By_Wix (1).jpg" height="100px" width="100px" alt=""> </a>
-        </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="indexb (1).html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="quotes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Type
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="indexb (1).html">Relegious</a></li>
-                  <li><a class="dropdown-item" href="indexb (1).html">Action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Quotes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="login.html">Contact Us</a>
-              </li>
+  <nav class="navbar navbar-expand-lg   fixed-top shadow  p-3 mb-5" style=" background-color: #040436;" >
+    <div class="container-fluid"  >
+      <div>
+      <a class="navbar-brand" href="indexb (1).html"><img src="137416910_padded_logo.png" height="100px" width="100px" alt=""> </a>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="indexb (1).html" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html" style="color: white;">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Type
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="indexb (1).html" >Relegious</a></li>
+              <li><a class="dropdown-item" href="indexb (1).html">Action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="quotes.html">Quotes</a></li>
             </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quotes.html" style="color: white;">Quotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contactus.html" style="color: white;">Contact Us</a>
+          </li>
+        </ul>
+        
+        <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="sign-in.html">
+          <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+          <i class="bi bi-person" style="font-size: 25px; color: rgb(255, 255, 255);" ></i>
+        </a>
+        
+      </div>
+    </div>
+  </nav> 
     
       <!-- Nav End -->
     
-    
+      <br><br><br><br><br>
     <!-- Logo Name -->
     
       <!-- <div>
@@ -91,7 +204,7 @@
 
 
 
-        <div class="clearfix" style="text-align: center;">
+        <div class="clearfix " style="text-align: center;">
             <img src="isl14.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -114,7 +227,7 @@
             
           </div>
 <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl15.jpg" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -133,7 +246,7 @@
 
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl16.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -158,7 +271,7 @@
 
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl17.jpg" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -174,7 +287,7 @@
           </div>
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl18.jpg" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -191,7 +304,7 @@
 
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl19.webp" height="350" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -218,7 +331,7 @@
 
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl20.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -238,7 +351,7 @@
 
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl21.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -258,7 +371,7 @@
           </div>
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl22.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -279,7 +392,7 @@
           </div>
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl23.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -298,7 +411,7 @@
           </div>
 
           <br><br><br><br><br>
-          <div class="clearfix" style="text-align: center;">
+          <div class="clearfix reveal" style="text-align: center;">
             <img src="isl24.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
             <br><br><br><br><br>
             <p class="h5">
@@ -320,7 +433,7 @@
       
                                     
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl25.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
@@ -338,7 +451,7 @@
 
 
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl26.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
@@ -358,7 +471,7 @@
 
                 
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl27.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
@@ -380,7 +493,7 @@
 
 
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl28.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
@@ -401,7 +514,7 @@
 
 
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl29.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
@@ -422,7 +535,7 @@
                 </div>
 
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl30.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
@@ -442,7 +555,7 @@
                 </div>
 
                 <br><br><br><br><br>
-                <div class="clearfix" style="text-align: center;">
+                <div class="clearfix reveal" style="text-align: center;">
                   <img src="isl31.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3" alt="...">
                   <br><br><br><br><br>
                   <p class="h5">
