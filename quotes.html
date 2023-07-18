@@ -2,31 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NW</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="icon" href="Free_Sample_By_Wix (1).jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 
+</head>
 
-    <style>
-      .zoom {
-        padding: 0px;
-        background-color: rgb(223, 223, 223);
-        transition: transform .2s; /* Animation */
-      
-        margin: 0 auto;
-      }
-      
-      .zoom:hover {
-        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      }
+<style>
 
 
-      @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+    /* Quotes Animation start */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -104,34 +97,129 @@ section .text-container .text-box h3{
   transform: translateY(0);
   opacity: 1;
 }
-      
-      </style>
 
-      <script>
 
-        function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
+
+/* Quotes Styling start */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container .box .body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+
+
+.container .box .body .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .body .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .body{
+    transform: rotateY(180deg);
+}
+
+.container .box .body .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #03062c,#dfdfdf);
+    transform: translateZ(100px);
+}
+
+.container .box .body .content div h3{
+    letter-spacing: 1px;
+}
+
+</style>
+<script>
+
+    function reveal() {
+var reveals = document.querySelectorAll(".reveal");
+
+for (var i = 0; i < reveals.length; i++) {
+var windowHeight = window.innerHeight;
+var elementTop = reveals[i].getBoundingClientRect().top;
+var elementVisible = 150;
+
+if (elementTop < windowHeight - elementVisible) {
+  reveals[i].classList.add("active");
+} else {
+  reveals[i].classList.remove("active");
+}
+}
 }
 
 window.addEventListener("scroll", reveal);
 
 
-      </script>
-</head>
-<body style="background-color: #fffdfd;" >
-  <nav class="navbar navbar-expand-lg   fixed-top shadow  p-3 mb-5" style=" background-color: #040436;" >
+  </script>
+
+<body style="background-color: #fffdfd;">
+
+  <nav class="navbar navbar-expand-lg   fixed-top shadow  p-1 mb-5" style=" background-color: #040436; " >
     <div class="container-fluid"  >
       <div>
       <a class="navbar-brand" href="indexb (1).html"><img src="137416910_padded_logo.png" height="100px" width="100px" alt=""> </a>
@@ -174,467 +262,579 @@ window.addEventListener("scroll", reveal);
         
       </div>
     </div>
-  </nav> 
-    
-      <!-- Nav End -->
-      <br><br><br><br><br>
+  </nav>
+
+      <!-- navbar end -->
+      <br><br><br><br><br><br><br><br>
     
 
       
 
-    <!-- head writting  -->
+      <!-- head writting  -->
+  
+      <div class="container-sm  shadow p-3 mb-5 bg-body-tertiary rounded  " style="background-color: white; margin-top: 10%;">
+  
+          <h1 style="color: rgb(65, 65, 65);">Islamic Quotes in Urdu with Images | Allah Quotes</h1>
+          <p style="font-size: large;">Islamic Quotes in Urdu are very famous and useful among the Muslim community all over the world. Because these quotes give us a direction about life. 
+              In this section, I will share with you the best collection of beautiful Islamic Quotes in Urdu. These quotes have been taken from the Quran sayings, Hadiths,
+               Islamic scholars and great Ulamas.These Urdu quotes will inspire and motivate you about your life and the beautiful religion of Islam which is the complete code 
+               of life. Islam is the religion of peace, love and humanity. These Islamic quotes in Urdu images will help you to build a powerful relationship with almighty Allah
+                and great love for Holy Prophet Hazrat Muhammad PBUH. </p>
+  
+  
+                <br><br>
+  
+                <div class="border border-top-0 border-secondary-subtle rounded-bottom shadow p-3 mb-5 bg-body-tertiary rounded">
+                  <h1 style="color: rgb(0, 95, 0);">URDU QUOTES</h1>
+                </div>
+  
+  
+                <br><br><br><br><br>
+  <!-- Quotes start  -->
 
-    <div class="container-sm  shadow p-3 mb-5 bg-body-tertiary rounded pt-5" style="background-color: white;">
+  <!-- 1st Row Start -->
+    <div class="container row">
+    <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+        <div class="box col-md-3 col-lg-3 col-sm-12" >
+            <div class="body">
+                <div class="Container" >
+                    <img src="Quotes1.webp" alt="" width="300px" height="250" >
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h2 class="text-white fs-5"> The friendship of books is very good.</h2>
+                        <p class="fs-6 text-white"> کتابو کی دوستی بڑی اچھی ہوتی ہے ہم سے بات تو نہیں کرتی لکن انجانے میں کچھ سکھا جاتی ہے</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box col-md-3 col-lg-3 col-sm-12">
+            <div class="body">
+                <div class="Container" >
+                    <img src="isl-2.jpg" alt="" width="300px" height="250" >
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h2 class="text-white fs-5">It's better than walking in the wrong with the crowd,
+                          That he should walk alone on the path of guidance</h2>
 
-        <h1 style="color: rgb(65, 65, 65);">Islamic Quotes in Urdu with Images | Allah Quotes</h1>
-        <p style="font-size: large;">Islamic Quotes in Urdu are very famous and useful among the Muslim community all over the world. Because these quotes give us a direction about life. 
-            In this section, I will share with you the best collection of beautiful Islamic Quotes in Urdu. These quotes have been taken from the Quran sayings, Hadiths,
-             Islamic scholars and great Ulamas.These Urdu quotes will inspire and motivate you about your life and the beautiful religion of Islam which is the complete code 
-             of life. Islam is the religion of peace, love and humanity. These Islamic quotes in Urdu images will help you to build a powerful relationship with almighty Allah
-              and great love for Holy Prophet Hazrat Muhammad PBUH. </p>
-
-
-              <br><br>
-
-              <div class="border border-top-0 border-secondary-subtle rounded-bottom shadow p-3 mb-5 bg-body-tertiary rounded">
-                <h1 style="color: rgb(0, 95, 0);">URDU QUOTES</h1>
-              </div>
-
-
-              <br><br><br><br><br>
-<!-- Quotes start  -->
-
-
-
-        <div class="clearfix " style="text-align: center;">
-            <img src="Quotes1.webp" height="300" width="100" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                The friendship of books is very good.
-            </p>
-          
-            <p>
-                کتابو کی دوستی بڑی اچھی ہوتی ہے ہم سے بات تو نہیں کرتی لکن انجانے میں کچھ سکھا جاتی ہے
-            </p>
-          
-            
-          </div>
-<br><br><br><br><br> 
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="isl-2.jpg" height="350" width="150" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5" >
-               
-                 It's better than walking in the wrong with the crowd,
-                 That he should walk alone on the path of guidance
-            </p>
-          
-            <p>
-                بھیڑ کے ساتھ غلط راستے پر چلنے سے بہتر ہے
-                کہ وہ ہدایت کے راستے پر اکیلا ہی چلے
-            </p>
-          
-            
-          </div>
+                        <p class="fs-6 text-white">بھیڑ کے ساتھ غلط راستے پر چلنے سے بہتر ہے
+                کہ وہ ہدایت کے راستے پر اکیلا ہی چلے</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box col-md-3 col-lg-3 col-sm-12">
+            <div class="body">
+                <div class="Container" >
+                    <img src="Quotes3.webp" alt="" width="300px" height="250" >
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h2 class="text-white fs-5">
+                          The sweetness of words
+                          It does not reveal the secret inside
+                          Who can tell by looking at a peacock?
+                          That this snake will eat</h2>
 
 
-
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="Quotes3.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                The sweetness of words
-                It does not reveal the secret inside
-                Who can tell by looking at a peacock?
-                That this snake will eat
-            </p>
-          
-            <p>
-                باتوں کی مٹھاس
+                        <p class="fs-6 text-white">باتوں کی مٹھاس
                 اندر کا بھید نہیں کھولتی
                 مور کو دیکھ کر کون کہہ سکتا ہے
-                کہ یہ سانپ کھاتا ہو گا
-            </p>
-          
-            
-          </div>
+                کہ یہ سانپ کھاتا ہو گا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="isl4.jpg" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                Do not ask for heaven, but rather,
-                Do such things in this world that 'Jannat' asks for you
-            </p>
-          
-            <p>
-                
-                تم جنّت نہ مانگو بلکہ,
-                تم دنیا میں ایسے کام کرو کہ ‘ جنّت ‘ تم کو مانگے
-            </p>
-          
-            
-          </div>
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="Quotes5.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                Always learn to compromise because a little bender
+<!-- 1nd Row End -->
 
-                It is better than breaking a relationship forever
-            </p>
-          
-            <p>
-                ہمیشہ سمجھوتا کرنا سیکھو کیونکہ تھوڑا سا جھک جانا 
+<!-- 2nd Row start -->
+
+<div class="container row">
+    <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+        <div class="box col-md-3 col-lg-3 col-sm-12" >
+            <div class="body ">
+                <div class="Container reveal" >
+                    <img src="isl4.jpg" alt="" width="300px" height="250" >
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                    <div>
+                        <h2 class="text-white fs-5"> Do not ask for heaven, but rather,
+                          Do such things in this world that 'Jannat' asks for you</h2>
+
+
+                        <p class="fs-6 text-white">تم جنّت نہ مانگو بلکہ,
+                تم دنیا میں ایسے کام کرو کہ ‘ جنّت ‘ تم کو مانگے</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box col-md-3 col-lg-3 col-sm-12">
+            <div class="body">
+                <div class="Container reveal" >
+                    <img src="Quotes5.webp" alt="" width="300px" height="250" >
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                    <div>
+                        <h2 class="text-white fs-6">
+                          Always learn to compromise because a little bender
+                          It is better than breaking a relationship forever</h2>
+                        <p class="fs-6 text-white">
+                          ہمیشہ سمجھوتا کرنا سیکھو کیونکہ تھوڑا سا جھک جانا 
 
                 کسی رشتے کو ہمیشہ کیلئے توڑ دینے سے بہتر ہوتا ہے 
 
-
-            </p>
-          
-            
-          </div>
-
-
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="isl-1.jpg" height="350" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                Knowledge is the name of understanding one's Lord
-                Everything else is the art of making a living
-            </p>
-          
-            <p>
-                علم اپنے رب کو سمجھنے کا نام ہے
-                باقی سب تو رزق کمانے کا فن ہے
-
-            </p>
-          
-            
-          </div>
-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box col-md-3 col-lg-3 col-sm-12">
+            <div class="body">
+                <div class="Container reveal" >
+                    <img src="isl-1.jpg" alt="" width="300px" height="250" >
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                    <div>
+                        <h2 class="text-white fs-5">
+                          Knowledge is the name of understanding one's Lord
+                          Everything else is the art of making a living
+                        </h2>
+                        <p class="fs-6 text-white">علم اپنے رب کو سمجھنے کا نام ہے
+                          باقی سب تو رزق کمانے کا فن ہے</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="Quotes2.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                We could not understand
-                He has every right to be good to us
-                To speak evil because he knows us
-                He gives life to us
-            </p>
-          
-            <p>
-                 ہمیں سمجھ ہی نہیں سکا
+
+</div>
+<!-- 2nd Row End -->
+
+
+<!-- 3rd Row start -->
+
+<div class="container row">
+  <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+      <div class="box col-md-3 col-lg-3 col-sm-12" >
+          <div class="body ">
+              <div class="Container reveal" >
+                  <img src="Quotes2.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6"> 
+                        We could not understand
+                        He has every right to be good to us
+                        To speak evil because he knows us
+                        He gives life to us
+                      </h2>
+
+
+                      <p class="fs-6 text-white">
+                        ہمیں سمجھ ہی نہیں سکا
                     اُسے پورا حق ہے ہمیں اچھا یا
                     بُرا کہنے کا کیونکہ جو ہمیں جان لیتا ہے
                     وہ ہم پر جان دیتا ہے
-            </p>
-          
-            
+                      </p>
+                  </div>
+              </div>
           </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl3.jpg" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        The idea of ​​repentance is a sign of happiness,
+                        Because those who do not understand for themselves
+                        That is unfortunate.
+                      </h2>
 
+                      <p class="fs-6 text-white">
+                        
+                        توبہ کا خیال خوش بختی کے علامت ہے
+                        کیوں کہ جو اپنے گناہ کو گناہ نہ سمجھے
+                        وہ بدقسمت ہے
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="isl3.jpg" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                The idea of ​​repentance is a sign of happiness,
-                Because those who do not understand for themselves
-                That is unfortunate.
-          
-            <p>
-                                
-                توبہ کا خیال خوش بختی کے علامت ہے
-                کیوں کہ جو اپنے گناہ کو گناہ نہ سمجھے
-                وہ بدقسمت ہے
-            </p>
-          
-            
+                      </p>
+                  </div>
+              </div>
           </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="Quotes4.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        To be great to begin with
+                        Not necessary but to be great
+                        Need to start
+                      </h2>
+                      <p class="fs-6 text-white">
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="Quotes4.webp" height="300" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                To be great to begin with
-                Not necessary but to be great
-                Need to start
-            </p>
-          
-            <p>
-                
-                شروعات کرنے کیلئے عظیم ہونے کی
+                        شروعات کرنے کیلئے عظیم ہونے کی
                 ضرورت نہیں مگر عظیم ہونے کیلئے
                 شروعات کرنے کی ضرورت ہے
-            </p>
-          
-            
+                    </p>
+                  </div>
+              </div>
           </div>
+      </div>
+  </div>
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="isl5.jpg" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                Stop fearing people, Allah gives honor
-                Not people.
-            </p>
-          
-            <p>
-                                    
-                    لوگوں سے ڈرنا چھوڑ دو عزت الله دیتا ہے
-                    لوگ نہیں۔۔۔۔۔۔
-          
-            
+
+
+</div>
+<!-- 3rd Row End -->
+
+
+
+<!-- 4th Row start -->
+
+<div class="container row">
+  <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+      <div class="box col-md-3 col-lg-3 col-sm-12" >
+          <div class="body ">
+              <div class="Container reveal" >
+                  <img src="isl5.jpg" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6"> 
+                        Stop fearing people, Allah gives honor
+                        Not people.
+                      </h2>
+
+
+                      <p class="fs-6 text-white">
+                        لوگوں سے ڈرنا چھوڑ دو عزت الله دیتا ہے
+                        لوگ نہیں۔۔۔۔۔
+                      </p>
+                  </div>
+              </div>
           </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl6.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        Do not spoil anything for anyone
 
-          <br><br><br><br><br>
-          <div class="clearfix reveal" style="text-align: center;">
-            <img src="isl6.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-            <br><br><br><br><br>
-            <p class="h5">
-                Do not spoil anything for anyone
+                        Allah will not allow anything to spoil you
+                        
+                        
+                      </h2>
 
-                Allah will not allow anything to spoil you
-                
-                To always think the best for everyone, that a successful person can never think bad of anyone
-            </p>
-          
-            <p>
-                                    
-                    تم کسی کا کچھ مت بگاڑو
+                      <p class="fs-6 text-white">
+                        
+                        تم کسی کا کچھ مت بگاڑو
                     
-                    اللہ تمہارا کچھ بگڑنے نہیں دے گا
-                    
-                    کہ ہمیشہ سب کیلئے بہتر سوچوں کہ ایک کامیاب انسان کبھی کسی کا برا نہیں سوچ سکتا
-          
-            
+                        اللہ تمہارا کچھ بگڑنے نہیں دے گا
+                        
+                       
+
+                      </p>
+                  </div>
+              </div>
           </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl7.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        Be patient, everything will be easy
 
-      
-                                    
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl7.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    Be patient, everything will be easy
+                        It is difficult before
+                        
+                       
+                      </h2>
+                      <p class="fs-6 text-white">
 
-                    It is difficult before
-                    
-                    Have complete faith in God, He keeps you better in the situation he keeps you in
-                  </p>
-                
-                  <p>
-                                          
-                          تم کسی کا کچھ مت بگاڑو
-                          
-                          اللہ تمہارا کچھ بگڑنے نہیں دے گا
-                          
-                          کہ ہمیشہ سب کیلئے بہتر سوچوں کہ ایک کامیاب انسان کبھی کسی کا برا نہیں سوچ سکتا
-                
-                  
-                </div>
+                        صبر کرو، سب کچھ آسان ہو جائے گا
+
+                        اس سے پہلے مشکل ہے۔
+                        
+                        
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
 
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl8.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    There is so much peace in it
+</div>
+<!-- 4th Row End -->
 
-                    What people call prayer
-                  </p>
-                
-                  <p>
-                                          
+
+
+<!-- 5th Row start -->
+
+<div class="container row">
+  <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+      <div class="box col-md-3 col-lg-3 col-sm-12" >
+          <div class="body ">
+              <div class="Container reveal" >
+                  <img src="isl8.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6"> 
+                        There is so much peace in it
+
+                        What people call prayer
+                      </h2>
+
+
+                      <p class="fs-6 text-white">
                         بہت سکون ہے اس میں
 
                         جسے لوگ نماز کہتے ہیں
-                
-                  
-                </div>
-
-                
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl11.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    The Lord opens doors from there
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl11.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        The Lord opens doors from there
 
                     From where there is no guess
-                  </p>
-                
-                  <p>
-    
                         
+                        
+                      </h2>
+
+                      <p class="fs-6 text-white">
+                        
+                       
                     رب وہاں سے دروازے کھولتا ہے
 
-                    جہاں سے گمان بھی نہیں ہوتا    
-                
-                  
-                </div>
+                    جہاں سے گمان بھی نہیں ہوتا  
+                        
+                       
 
-
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl10.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    Only a sense of regret, a prostration and a spectacle
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl10.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        Only a sense of regret, a prostration and a spectacle
 
                     O God, how easy it is to please You
-                  </p>
-                
-                  <p>      
                         
-                    صرف احساس ندامت اک سجدہ اور چشم تر
+                       
+                      </h2>
+                      <p class="fs-6 text-white">
+
+                        صرف احساس ندامت اک سجدہ اور چشم تر
 
                     اے خدا کتنا آسان ہے منانا تجھ کو            
-                
-                  
-                </div>
-
-
-
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl9.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 zoom" alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    All the heights of life
-                    It is met by bowing before the Lord
-                  </p>
-                
-                  <p>
-                                          
                         
-                        زندگی کی ساری بلندیاں
-                        رب کے آگے جھکنے سے ملتی ہیں     
-                
-                  
-                </div>
-
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl12.webp" height="380" width="300" class="col-md-6 float-md-end mb-3 ms-md-3 zoom" alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    Tahajjud is a loving worship of Allah
-
-                    Think how much the worshiper will be pampered by Allah
-                  </p>
-                
-                  <p>      
                         
-                    تہجد اللہ پاک کی لاڈلی عبادت ہے
-
-                    سوچو تہجد گزار اللہ پاک کا کتنا لاڈلہ ہوگا    
-                
-                  
-                </div>
-
-                <br><br><br><br><br>
-                <div class="clearfix reveal" style="text-align: center;">
-                  <img src="isl13.webp" height="380" width="300" class="col-md-6 float-md-start mb-3 ms-md-3 " alt="...">
-                  <br><br><br><br><br>
-                  <p class="h5">
-                    Oh Allah, choose me among your worshipers
-
-                    How long will I run away from you in your own world?
-                  </p>
-                
-                  <p>
-                        
-                چن لے مجھے بھی اپنے سجدے کرنے والوں میں اے اللہ
-
-                کب تک بھاگتا رہوں گا تجھ سے تیری ہی دنیا میں   
-                
-                  
-                </div>
-          
-            
+                    </p>
+                  </div>
+              </div>
           </div>
+      </div>
+  </div>
 
-          <!-- Quotes end -->
 
-          <br><br>
 
-          <!-- pagination start -->
+</div>
+<!-- 5th Row End -->
 
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="quotes.html" aria-label="Previous" style="color: rgb(21, 156, 21);">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
 
-              </li>
-              <li class="page-item" ><a class="page-link" href="quotes.html" style="color: rgb(21, 156, 21);">1</a></li>
-              <li class="page-item"><a class="page-link" href="quote2.html" style="color: rgb(21, 156, 21);">2</a></li>
-              
-              <li class="page-item">
-                <a class="page-link" href="quote2.html" aria-label="Next" style="color: rgb(21, 156, 21);">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-           <!-- pagination End -->
+<!-- 6th Row start -->
 
+<div class="container row">
+  <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+      <div class="box col-md-3 col-lg-3 col-sm-12" >
+          <div class="body ">
+              <div class="Container reveal" >
+                  <img src="isl9.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6"> 
+                        All the heights of life
+                    It is met by bowing before the Lord
+                      </h2>
+
+
+                      <p class="fs-6 text-white">
+                        زندگی کی ساری بلندیاں
+                        رب کے آگے جھکنے سے ملتی ہیں  
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl12.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        Tahajjud is a loving worship of Allah
+
+                        Think how much the worshiper will be pampered by Allah
+                        
+                        
+                      </h2>
+
+                      <p class="fs-6 text-white">
+                        
+                        تہجد اللہ پاک کی لاڈلی عبادت ہے
+
+                        سوچو تہجد گزار اللہ پاک کا کتنا لاڈلہ ہوگا    
+                    
+                        
+                       
+
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="box col-md-3 col-lg-3 col-sm-12">
+          <div class="body">
+              <div class="Container reveal" >
+                  <img src="isl13.webp" alt="" width="300px" height="250" >
+              </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center reveal">
+                  <div>
+                      <h2 class="text-white fs-6">
+                        Oh Allah, choose me among your worshipers
+
+                        How long will I run away from you in your own world?
+                        
+                       
+                      </h2>
+                      <p class="fs-6 text-white">
+                        چن لے مجھے بھی اپنے سجدے کرنے والوں میں اے اللہ
+
+                        کب تک بھاگتا رہوں گا تجھ سے تیری ہی دنیا میں            
+                        
+                        
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+</div>
+    
+<!-- 6th Row End -->
+
+
+
+
+  <!-- Quotes end -->
+
+  <br><br>
+
+ 
+  </div>
+ <!-- pagination start -->
+
+ <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="quotes.html" aria-label="Previous" style="color: rgb(21, 156, 21);">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+
+    </li>
+    <li class="page-item" ><a class="page-link" href="quotes.html" style="color: rgb(21, 156, 21);">1</a></li>
+    <li class="page-item"><a class="page-link" href="quote2.html" style="color: rgb(21, 156, 21);">2</a></li>
+    
+    <li class="page-item">
+      <a class="page-link" href="quote2.html" aria-label="Next" style="color: rgb(21, 156, 21);">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+ <!-- pagination End -->
 
 <br><br>
 
-           <!-- Footer Start -->
+   <!-- Footer Start -->
 
-  <div class="row pt-5" style="background-color: #cecece;">
-    <div class="col-md-4 col-sm-12 col-lg-4 ps-5 ">
-      <ul>
-        <li class="h5" style="color: rgb(5, 5, 88);">MAIN MENU</li>
-        <li class="pt-2">Home</li>
-        <li class="pt-1">About Us</li>
-        <li class="pt-1">Contact Us</li>
-      </ul>
-    </div>
+<!-- <div class="row pt-5" style="background-color: #cecece;">
+<div class="col-md-4 col-sm-12 col-lg-4 ps-5 ">
+<ul>
+<li class="h5" style="color: rgb(5, 5, 88);">MAIN MENU</li>
+<li class="pt-2">Home</li>
+<li class="pt-1">About Us</li>
+<li class="pt-1">Contact Us</li>
+</ul>
+</div>
 
-    <div class="col-md-4 col-sm-12 col-lg-4 ps-5 ">
-      <ul>
-        <li class="h5" style="color: rgb(5, 5, 88);"> HELP</li>
-        <li class="pt-2">Search Bar</li>
-        <li class="pt-1">About Us</li>
-        <li class="pt-1">Contact Us</li>
-      </ul>
-    </div>
+<div class="col-md-4 col-sm-12 col-lg-4 ps-5 ">
+<ul>
+<li class="h5" style="color: rgb(5, 5, 88);"> HELP</li>
+<li class="pt-2">Search Bar</li>
+<li class="pt-1">About Us</li>
+<li class="pt-1">Contact Us</li>
+</ul>
+</div>
 
-    <div class="col-md-4 col-sm-12 col-lg-4 ps-5">
-      <ul>
-        <li class="h5" style="color: rgb(5, 5, 88);">SECURITY</li>
-        <li class="pt-2">Privacy Policy</li>
-        <li class="pt-1">Terms and Condition</li>
-        
-      </ul>
-    </div>
-    <div style="text-align: center;" class="pt-3">
-     <a href="https://www.instagram.com" target="_blank"> <i class="bi bi-instagram" style="color: rgb(71, 71, 71);" ></i></a>
-      <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook" style="color: rgb(71, 71, 71);"></i></a>
-      <a href="https://web.whatsapp.com" target="_blank"><i class="bi bi-whatsapp" style="color: rgb(71, 71, 71);"></i></a>
-    </div>
-  </div>
+<div class="col-md-4 col-sm-12 col-lg-4 ps-5">
+<ul>
+<li class="h5" style="color: rgb(5, 5, 88);">SECURITY</li>
+<li class="pt-2">Privacy Policy</li>
+<li class="pt-1">Terms and Condition</li>
 
-<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+</ul>
+</div>
+<div style="text-align: center;" class="pt-3">
+<a href="https://www.instagram.com" target="_blank"> <i class="bi bi-instagram" style="color: rgb(71, 71, 71);" ></i></a>
+<a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook" style="color: rgb(71, 71, 71);"></i></a>
+<a href="https://web.whatsapp.com" target="_blank"><i class="bi bi-whatsapp" style="color: rgb(71, 71, 71);"></i></a>
+</div>
+</div> -->
+
+
 </body>
 </html>
