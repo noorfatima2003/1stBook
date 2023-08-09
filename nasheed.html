@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nasheeds</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="nasheedjava.js">
+    <link rel="stylesheet" href="nasheed-style.css">
+    <link rel="icon" href="137416910_padded_logo.png" type="image/x-icon">
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+	<div class="main ps-3 pe-3">
+		<div class="progress_bar" id="Bar"></div>
+		<img src="bgg.jpg" alt="" id="bg">
+
+		<!-- navbar part -->
+		<div class="navbar">
+			<a href="#" id="logo"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Naheeds</a>
+            <a onclick="open_close_menu()" id="responsive_menu"><i class='bx bxs-chevron-down' ></i></a>
+
+			<div class="nav_content">
+				<li><a href="indexb (1).html">Home</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                      Type
+                    </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="indexb (1).html" >Relegious</a></li>
+                    <li><a class="dropdown-item" href="indexb (1).html">Action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="quotes.html">Quotes</a></li>
+                  </ul>
+                  </li>
+				<li><a href="quotes.html">Quotes</a></li>
+				<li><a href="contactus.html">Contact US</a></li>
+			</div>
+	</div>
+
+
+            <!-- <a onclick="menu_action()" id="menu_btn"><i class='bx bx-menu-alt-left'></i></a>
+			<div class="side_menu">
+				<li><a href="#"><i class='bx bx-category'></i></a></li>
+				<li><a href="#"><i class='bx bx-tv'></i></a></li>
+				<li><a href="#"><i class='bx bxs-movie-play'></i></a></li>
+				<li><a href="#"><i class='bx bxs-message-square-detail'></i></a></li>
+				<li><a href="#"><i class='bx bx-merge'></i></a></li>
+				<li><a href="#"><i class='bx bxs-cart-add'></i></a></li>
+			</div>
+		</div> -->
+        
+       <!--  mid part -->
+		<div class="mid_part">
+            <img src="daniel-joshua-ekIbeBdP0ew-unsplash.jpg" width="250px"  alt="">
+
+			<div class="description">
+				<p id="A_name">Nasheeds</p>
+				<p>co-founder - Manager</p>
+				<br>
+				<div class="author_desc">
+				   <p>It is a long established fact that a reader will be distracted the readable content of a page at layout.</p>
+				</div>
+
+                 <!-- <div class="buttons">
+                   <button><i class='bx bx-play'></i></button>
+				   <button><i class='bx bxs-like' ></i></button>
+				   <button><i class='bx bx-share-alt'></i></button>
+				   <button><i class='bx bx-bookmark-alt'></i></button>
+                 </div> -->
+
+			</div>
+		</div>
+
+        <!-- tracks part -->
+		<div class="top_tracks" id="top_tracks">
+			<p id="heading"><i class='bx bxs-playlist'></i>&nbsp;&nbsp;Top Tracks</p>
+			<div id="track"></div>
+			
+			<div id="track">
+				<img src="daniel-olah-2lMK4dgqwFM-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href=""><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="allah calls you mid night.mp3"><i class='bx bx-play'></i></a>
+				</div>
+
+				<audio src="allah calls you mid night.mp3" id="music"></audio>
+
+				<div id="song_desc">
+				   <p>Allah Calls you in mid of the night</p>
+				   <p>Ali Muhammad Zahid Idris </p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				   <p id="message">New</p>
+				</div>
+				<div id="actions_2">
+				  <p><a href="allah calls you mid night.mp3"><i class='bx bx-share' ></i></a></p>
+				  <p><a href="2.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="gayatri-malhotra-CqpuJml_Fzo-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href=""><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="y2mate.is - My Hope Allah Muhammad Al Muqit Perfect Slowed Reverb With Relaxing Rain MenTal7262 -VlaqSqV5a4s-192k-1691500628.mp3"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="y2mate.is - My Hope Allah Muhammad Al Muqit Perfect Slowed Reverb With Relaxing Rain MenTal7262 -VlaqSqV5a4s-192k-1691500628.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					<p>My Hope Allah</p>
+				   <p>Muhammad Al Muqit</p>
+				   <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				   <p id="message">New</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="1.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="david-billings-EwcvNe53bdM-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="y2mate.is - Dar Al ghoroor Ahmed Bukhatir أحمد بوخاطر دار الغرور-MWAkHcGEEOc-192k-1691533393.mp3"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="y2mate.is - Dar Al ghoroor Ahmed Bukhatir أحمد بوخاطر دار الغرور-MWAkHcGEEOc-192k-1691533393.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Dar Al Ghoroor </p>
+				     <p>Ahmed Bukhatir</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				     <p id="message">New</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="3.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="mike-yukhtenko-MDzJF3o8Ajk-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="y2mate.is - baraa_masoud___love_and_life_____vocals_only_براء_مسعود___حب_وحياة___بدون_موسيقى-coInHMUQzCg-128k-1691533964.mp3"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="y2mate.is - baraa_masoud___love_and_life_____vocals_only_براء_مسعود___حب_وحياة___بدون_موسيقى-coInHMUQzCg-128k-1691533964.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Love And Live</p>
+				     <p>Baraa Masoud </p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="4.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+			<div id="track">
+				<img src="huilin-dai-yI_c35jgxYI-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="y2mate.is - Tabalagh Bellqaleel-xNyk45lTXOI-64k-1691534097.mp3"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="y2mate.is - Tabalagh Bellqaleel-xNyk45lTXOI-64k-1691534097.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Tabalagh Bellqaleel</p>
+				     <p>Osama Ali Safi</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+            <div id="track">
+				<img src="sean-wang-rrQDVEhZELk-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="y2mate.is - Sabeelu Dummu Slowed Reverb -RV7Zzpbb7uI-64k-1691534989.mp3"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="y2mate.is - Sabeelu Dummu Slowed Reverb -RV7Zzpbb7uI-64k-1691534989.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Sabilu Dumu</p>
+				     <p> Muhammad al Muqit</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+            <div id="track">
+				<img src="lena-balk-whBM_HtfrmA-unsplash.jpg" alt="">
+				<div id="actions">
+					<a href="#"><i class='bx bx-heart' ></i></a>
+					<a id="play_pause" href="y2mate.is - Tabsirah The Enlightening Nasheed by Muhammad Al Muqit-hOpMC4DiLjs-64k-1691535152.mp3"><i class='bx bx-play'></i></a>
+				</div>
+				<audio src="y2mate.is - Tabsirah The Enlightening Nasheed by Muhammad Al Muqit-hOpMC4DiLjs-64k-1691535152.mp3" id="music"></audio>
+
+				<div id="song_desc">
+					 <p>Tabsirah The Enlightening</p>
+				     <p>Muhammad Al Muqit</p>
+				     <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+				</div>
+
+				<div id="actions_2">
+				  <p><i class='bx bx-share' ></i></p>
+				  <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+				</div>
+			</div>
+
+		</div>
+
+        <!-- user comments part -->
+		<div class="user_comments" id="user_comments">
+			<p id="heading"><i class='bx bx-comment-detail'></i>&nbsp;&nbsp;Comments</p>
+            
+           <div class="comments">
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;karl rock</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>This recitation touched my heart.❤</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;karl rock</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>
+                        يا رب 🖤 
+                        أيقنت أنك جابر خاطري، أيقنت أنك مجيب دعوتي، أيقنت أنك محققُ حلمي ومدبره بأطيب ما يكون 🖤. 
+                        ظني فيكَ لا يخيب يا جواد يا كريم </p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	 <div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;karl rock</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>May Allah reward you for sharing this beautiful nasheed, with english translations...enjoying the beauty of arabic with understanding the same in english.
+                        From India 🇮🇳 ♥️</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           	<div class="comment">
+           	 	<div id="user_p">
+           	 		<p><i class='bx bx-user' ></i>&nbsp;&nbsp;karl rock</p>
+           	 		<p></p>
+           	 	</div>
+           	 	<div id="user_c">
+           	 		<p>This is sooo beautifullllll❤❤❤...im almost in tears</p>
+           	 		<div id="social">
+           	 			<a><i class='bx bxl-facebook-circle' ></i></a>
+           	 			<a><i class='bx bxl-twitter' ></i></a>
+           	 		</div>
+           	 	</div>
+           	 </div>
+
+           </div>
+
+		</div>
+
+		<!-- popular creator part -->
+		<!-- <div class="popular_creator">
+           <p id="heading"><i class='bx bx-trophy' ></i>&nbsp;&nbsp;Popular Creator</p>
+            <div class="artists_list">
+
+            	<div class="artist">
+            		<img src="img.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            		
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/img1.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/img2.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/img3.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/img4.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/img1.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            	</div>
+
+            	<div class="artist">
+            		<img src="img/img2.jpg" alt="">
+            		<div class="artist_desc">
+            			<p>Arine Grande</p>
+            			<p><i class='bx bx-like' ></i>&nbsp;&nbsp;2000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bx-share' ></i>500+</p>
+            		</div>
+            	</div>
+
+            </div>
+		<</div> -->
+
+        <!-- footer part -->
+		<div class="footer">
+			<a id="logo" href="indexb (1).html"><i class='bx bxs-bar-chart-alt-2' ></i>&nbsp;Nasheeds</a>
+			<div class="social_handle">
+				<i class='bx bxl-twitter' ></i>
+				<i class='bx bxl-twitch'></i>
+				<i class='bx bxl-github' ></i>
+			</div>
+		</div>
+
+</div> 
+
+  <!-- javascript file -->
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- by Dev Ideas -->
